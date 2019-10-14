@@ -7,7 +7,8 @@
     "dev": "webpack-dev-server --mode development --watch",
     "prod": "webpack --mode production",
     "test": "jest",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "storybook": "start-storybook  -c ./storybook"
   },
   "husky": {
     "hooks": {
@@ -25,6 +26,7 @@
     "@babel/core": "^7.6.4",
     "@babel/preset-env": "^7.6.3",
     "@babel/preset-react": "^7.6.3",
+    "@storybook/react": "^5.2.4",
     "babel-eslint": "^10.0.3",
     "babel-loader": "^8.0.6",
     "cross-env": "^6.0.3",
