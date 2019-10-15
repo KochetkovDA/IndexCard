@@ -2,18 +2,13 @@
     "parser": "babel-eslint",
     "extends": [
         "airbnb",
-        "prettier",
         "plugin:jest/style",
         "plugin:jest/recommended",
     ],
     "plugins": [
         "jest",
-        "prettier"
     ],
     "rules": {
-        "prettier/prettier": [
-            "error"
-        ],
         "import/no-extraneous-dependencies": [
             "error", {
                "devDependencies": true
