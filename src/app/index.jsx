@@ -1,6 +1,21 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+
+import { render } from 'react-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { Provider as ReduxProvider } from 'react-redux';
+
 import App from './views/App';
 import './index.css';
+import configureStore from './redux/store';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const reduxStore = configureStore({});
+
+const RootHtml = () => (
+  <ReduxProvider store={reduxStore}>
+    <Router>
+      <App />
+    </Router>
+  </ReduxProvider>
+);
+
+render(<RootHtml />, document.getElementById('root'));
