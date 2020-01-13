@@ -1,5 +1,5 @@
 
-import { Home, Test } from '../views/pages';
+import { Home, examplePage } from '../views/pages';
 
 const routes = [
   {
@@ -9,7 +9,7 @@ const routes = [
   },
   {
     path: '/test-route',
-    component: Test,
+    component: examplePage,
     exact: true,
   },
 ];

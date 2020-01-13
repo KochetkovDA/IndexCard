@@ -6,7 +6,7 @@ const App = () => (
   <div>
     <header>
       <Link to="/">Home</Link>
-      <Link to="/test-route">Test</Link>
+      <Link to="/test-route">Example Page</Link>
     </header>
 
     { routes.map((route) => (
