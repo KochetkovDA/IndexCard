@@ -1,0 +1,25 @@
+.rightNavBar {
+    background: #ffffff;
+    color: #333333;
+    float: left;
+    display:flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 4px 0px rgba(50, 50, 50, 0.25);
+}
+
+.rightNavBar .navBarList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.rightNavBar .navBarList > li {
+    padding: 5px;
+}
+
+.rightNavBar .navBarList > li > a{
+    text-decoration: none;
+}
